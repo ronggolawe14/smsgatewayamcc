@@ -8,36 +8,74 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+
     <EditText
-        android:id="@+id/edt1"
+        android:id="@+id/txtapi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv1"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textMultiLine"
+        android:text="TP0gRXUaxQM-W1JVqiMqTXDQtmyCq2itfzyWuSnWXd"
+        android:textSize="22sp" />
+
     <EditText
-        android:id="@+id/edt2"
+        android:id="@+id/txtsender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv2"
-        android:inputType="textMultiLine"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtapi"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="ENTER SENDER NAME"
+        android:inputType="textPersonName"
+        android:textSize="22sp" />
 
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/txtphone"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtsender"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="ENTER PHONE WITH COUNTRY CODE"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
 
-        android:text="Mobile No:" />
-
-    <TextView
-        android:id="@+id/tv2"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/txtmess"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt1"
-        android:text="Pesan: " />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtphone"
+        android:layout_marginTop="25dp"
+        android:width="1dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="ENTER MESSAGE HERE"
+        android:inputType="textMultiLine"
+        android:maxHeight="10dp"
+        android:maxLines="10"
+        android:minHeight="180dp"
+        android:scrollbars="vertical"
+        android:textSize="22sp" />
+
     <Button
-        android:id="@+id/btn_kirim"
+        android:id="@+id/btnsend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt2"
-        android:text="Kirim!"/>
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:text="SEND"
+        android:textSize="22sp" />
 
 </RelativeLayout>
